@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance { private set; get; }
-    [SerializeField] public Transform controllable;
-    private IControllable iControllable;
+    [SerializeField] private Transform controllable;
+    public IControllable iControllable;
     private void Awake()
     {
         if (controllable.TryGetComponent(out IControllable controllableObject))

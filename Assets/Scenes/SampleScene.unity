@@ -496,6 +496,7 @@ MonoBehaviour:
   health: 10
   moveSpeed: 0.5
   attackRadius: 0.4
+  damage: 5
 --- !u!50 &1194885549
 Rigidbody2D:
   serializedVersion: 4
@@ -697,6 +698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68794c166b842548851141e9b576382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  moveSpeed: 0
+  health: 100
+  moveSpeed: 6
   attackRadius: 0
+  damage: 0

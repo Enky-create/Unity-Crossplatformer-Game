@@ -15,11 +15,11 @@ public class MoveCrowState : NpcBaseState
     public override void UpdateState(BaseNpc npc)
     {
         var crow = npc as Crow;
-        var direction = PlayerController.Instance.controllable.transform.position - crow.transform.position;
+        var direction = PlayerController.Instance.iControllable.GetPosition().position - crow.transform.position;
         crow.transform.Translate(direction * Time.deltaTime * npc.GetSpeed());
         if (direction.magnitude<npc.GetAttackRadius())
         {
-            npc.SwitchState(crow.AttackCrowState);
+            crow.SwitchState(crow.AttackCrowState);
         }
     }
 

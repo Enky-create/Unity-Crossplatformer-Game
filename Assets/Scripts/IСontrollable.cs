@@ -7,4 +7,6 @@ public interface IControllable
     public void Move(Vector2 moveVector);
     public void Attack();
     public void SpecialAttack();
+    public void GetDamage(float damage);
+    public Transform GetPosition();
 }
